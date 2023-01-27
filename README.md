@@ -1,73 +1,72 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# QR Code Generator App
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This is a Nest.js application that generates a QR code that links to a page with a list of 10 random movies. The QR code is regenerated every 10 seconds and returns a new link to another set of 10 random movies.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Getting Started
 
-## Description
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### Prerequisites
 
-## Installation
+- Node.js version 12 or higher
+- Nest.js framework
+- Typescript
+- npm or yarn package manager
 
-```bash
-$ npm install
-```
+### Installing
 
-## Running the app
+1. Clone the repository to your local machine:
+git clone https://github.com/your-username/qr-code-generator-app.git
 
-```bash
-# development
-$ npm run start
+Copy code
 
-# watch mode
-$ npm run start:dev
+2. Change into the project directory:
+cd qr-code-generator-app
 
-# production mode
-$ npm run start:prod
-```
+Copy code
 
-## Test
+3. Install the necessary dependencies:
+npm install
 
-```bash
-# unit tests
-$ npm run test
+Copy code
+or 
+yarn
 
-# e2e tests
-$ npm run test:e2e
+Copy code
 
-# test coverage
-$ npm run test:cov
-```
+4. Start the development server:
+npm run start:dev
 
-## Support
+Copy code
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+5. The application will be running at [http://localhost:3000](http://localhost:3000).
 
-## Stay in touch
+### Product Usage
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+1. GET request [http://localhost:3000//api/v1/qr](http://localhost:3000/api/v1/qr) in your client.
+2. Scan the QR cod(response of thwe the GET API request) with your device's camera app.
+3. You will be redirected to a page with a list of 10 random movies.
+4. The QR code will be regenerated every 10 seconds and return a new link to another set of 10 random movies.
+5. You can see the movies list by following the url link provided by the QR code
 
-## License
+## Deployment
 
-Nest is [MIT licensed](LICENSE).
+This application can be deployed to a hosting platform such as Heroku.
+
+## Built With
+
+- [Nest.js](https://nestjs.com/) - The web framework used
+- [React.js](https://reactjs.org/) - The frontend framework used
+- [Typescript](https://www.typescriptlang.org/) - Language used
+- [qrcode](https://www.npmjs.com/package/qrcode) - QR code generator
+
+## Author
+
+* **Your Name** - [your-username](https://github.com/your-username)
+
+## Acknowledgments
+
+- [Movie JSON](https://gist.github.com/saniyusuf/406b843afdfb9c6a86e25753fe2761f4) - The JSON file used for the movie data
+
+Please note that this is a template and you should adjust it for your needs and requirements. And also, you should replace the repository link, your name, and other information that should be personalised.
+Please note that this is a template and you should adjust it for your needs and requirements. And also, you should replace the repository link, your name, and other information that should be personalised.
