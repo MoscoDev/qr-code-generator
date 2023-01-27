@@ -34,7 +34,10 @@ async getQRCode(){
     //    console.log(QrCodeValue)
         if (QrCodeValue == undefined) {
           // handle miss!
-          QrCodeValue = await QRCode.toDataURL(process.env.CLIENT_URL, opt);
+          QrCodeValue = await QRCode.toDataURL(
+            'https://movielist-ytru.onrender.com/movies',
+            opt,
+          );
         }
         return QrCodeValue
     } catch (error) {
