@@ -26,8 +26,7 @@ export class MoviesService {
 
       myCache.set('movies', JSON.stringify(movies), 10000);
     } catch (error) {
-      console.log(error);
-    }
+          }
   }
 
   async getMovies() {

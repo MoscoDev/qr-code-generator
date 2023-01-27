@@ -21,7 +21,7 @@ export class QRCodeService {
   async generateQRCode() {
    
     let qrImage = await QRCode.toDataURL(
-      process.env.CLIENT_URL,
+      'https://movielist-ytru.onrender.com/movies',
       opt,
     );
      myCache.set('qrCode', qrImage, 10000);
@@ -31,7 +31,7 @@ export class QRCodeService {
 async getQRCode(){
     try {
        let QrCodeValue: string = myCache.get('qrImage');
-       console.log(QrCodeValue)
+    //    console.log(QrCodeValue)
         if (QrCodeValue == undefined) {
           // handle miss!
           QrCodeValue = await QRCode.toDataURL(process.env.CLIENT_URL, opt);
