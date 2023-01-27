@@ -42,9 +42,7 @@ export class MoviesService {
          movies = this.shuffle(data).slice(0, 10);
 
       }
-      console.log(movies)
-      console.log("ewooooo")
-      console.log("ewooooo");
+      
       return movies;
     } catch (error) {}
   }
