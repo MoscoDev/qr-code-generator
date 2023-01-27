@@ -62,11 +62,9 @@ This application can be deployed to a hosting platform such as Heroku.
 
 ## Author
 
-* **Your Name** - [your-username](https://github.com/your-username)
+* **Profile** - [MoscoDev](https://github.com/MoscoDev)
 
 ## Acknowledgments
 
 - [Movie JSON](https://gist.github.com/saniyusuf/406b843afdfb9c6a86e25753fe2761f4) - The JSON file used for the movie data
 
-Please note that this is a template and you should adjust it for your needs and requirements. And also, you should replace the repository link, your name, and other information that should be personalised.
-Please note that this is a template and you should adjust it for your needs and requirements. And also, you should replace the repository link, your name, and other information that should be personalised.
